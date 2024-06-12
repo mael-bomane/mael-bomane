@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}   
+
+progress {
+  border-radius: 7px; 
+  width: 80%;
+  height: 22px;
+  margin-left: -11.5%;
+}
+progress::-webkit-progress-bar {
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+ background: linear-gradient(to right, #9945FF, #14F195);
+ border-radius: 7px;
+}
+progress::-moz-progress-bar {
+ background: linear-gradient(to right, #9945FF, #14F195);
+ border-radius: 7px;
+}
