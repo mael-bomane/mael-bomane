@@ -5,52 +5,8 @@ import { Matrix } from "@/components/matrix";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faDiscord, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import local from "next/font/local";
 
-const graffiti = local({ src: '../assets/fonts/don-graffiti.otf' });
-
-const kebab = 'ez-krk';
-const snake = 'ez_krk';
-
-const socials = {
-  discord: `${snake}`,
-  github: `${kebab}`,
-  twitter: `@${snake}`,
-  mail: `me@${kebab}.dev`
-};
-
-const skills = [
-  {
-    name: 'typescript',
-    score: 8,
-    frameworks: [
-      {
-        name: 'react',
-        score: 8
-      },
-      {
-        name: 'nest',
-        score: 6
-      }
-    ]
-  },
-  {
-    name: 'rust',
-    score: 7
-  },
-  {
-    name: 'python',
-    score: 5
-  },
-  {
-    name: 'bash',
-    score: 4
-  },
-  {
-    name: 'sql',
-    score: 3
-  }
-]
+import { socials, skills } from "@/config";
 
 export default function Home() {
 
@@ -60,13 +16,13 @@ export default function Home() {
       <div className="relative w-full md:w-[50vw] rounded-lg flex flex-col place-items-center space-y-4 py-8 mb-8 bg-white text-black">
         <Image
           className="relative rounded-full border-2 border-black"
-          src="/dev.jpg"
-          alt="ez_krk"
+          src="/me.jpg"
+          alt="mael bomane"
           width={180}
           height={37}
           priority
         />
-        <h1 className="text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-[#9945FF] to-[#14F195]"><span className={graffiti.className}>€$¥</span></h1>
+        <h1 className="text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-[#9945FF] to-[#14F195]">mael bomane</h1>
         <h2 className="text-xl">solana developer</h2>
         <div className="flex justfy-center items-center space-x-4">
           <Link href={`https://x.com/${socials.twitter}`}

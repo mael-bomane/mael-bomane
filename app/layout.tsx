@@ -1,11 +1,16 @@
+import { Inconsolata } from 'next/font/google'
+
 import type { Metadata } from "next";
-import local from "next/font/local";
+
 import "./globals.css";
 
-const pixel = local({ src: '../assets/fonts/pixel.ttf' });
+const inconsolata = Inconsolata({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "€$¥",
+  title: "mael bomane",
   description: "solana developer",
 };
 
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={pixel.className}>{children}</body>
+      <body className={inconsolata.className}>{children}</body>
     </html>
   );
 }

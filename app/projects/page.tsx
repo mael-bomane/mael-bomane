@@ -5,33 +5,38 @@ import { Matrix } from "@/components/matrix";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faDiscord, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import local from "next/font/local";
-
-const graffiti = local({ src: '../../assets/fonts/don-graffiti.otf' });
-
-const kebab = 'ez-krk';
-const snake = 'ez_krk';
-
-const socials = {
-  discord: `${snake}`,
-  github: `${kebab}`,
-  twitter: `@${snake}`,
-  mail: `me@${kebab}.dev`
-};
 
 const projects = [
   {
-    slug: 'whitehat',
-    website: 'https://whitehat.vercel.app/',
-    description: 'anonymous bug bounty protocol',
-    github: 'whitehat'
+    slug: 'unrekt',
+    website: 'https://unrekt.vercel.app/',
+    description: 'fan art front-end for nft investment checklist by xborg',
+    github: 'unrekt'
   },
   {
-    slug: 'kanban',
-    website: 'https://sol-kanban.vercel.app/',
-    description: 'organizational toolkit for crypto-natives',
-    github: 'kanban'
+    slug: 'skywalker',
+    website: '',
+    description: 'test your computer for seed phrases before bad guys do',
+    github: 'skywalker'
   },
+  {
+    slug: 'deso-fren',
+    website: 'https://deso-fren.vercel.app/',
+    description: 'minimum wage in deso diamonds',
+    github: 'deso-fren'
+  },
+  // {
+  //   slug: 'whitehat',
+  //   website: 'https://whitehat.vercel.app/',
+  //   description: 'anonymous bug bounty protocol',
+  //   github: 'whitehat'
+  // },
+  // {
+  //   slug: 'kanban',
+  //   website: 'https://sol-kanban.vercel.app/',
+  //   description: 'organizational toolkit for crypto-natives',
+  //   github: 'kanban'
+  // },
 ]
 
 export default function Home() {
@@ -55,7 +60,6 @@ export default function Home() {
                 {project.description}
               </p>
             </Link>
-
           ))
         }
       </div>
