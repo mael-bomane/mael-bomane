@@ -1,4 +1,6 @@
-### Hi there 👋
+### solana full-🥩 developer : rust + typescript
+
+![mael-bomane's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mael-bomane&theme=gruvbox&show_icons=true&hide_border=true&layout=compact)
 
 ![mael-bomane's Stats](https://github-readme-stats.vercel.app/api?username=mael-bomane&theme=gruvbox&show_icons=true&hide_border=true&count_private=true)
 
