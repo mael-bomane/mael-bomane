@@ -17,7 +17,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="rust" width="40" height="40" />
   </a>
 </p>
-<p align="center" style="text-decoration: none; box-sizing: border-box"> 
+<p align="center"> 
   <h4 align="left">scripting languages :</h4>
   
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="bash" width="40" height="40" />
