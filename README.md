@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+![mael-bomane's Stats](https://github-readme-stats.vercel.app/api?username=mael-bomane&theme=gruvbox&show_icons=true&hide_border=true&count_private=true)
+
 <!--
 **ez-krk/ez-krk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
