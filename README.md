@@ -1,6 +1,6 @@
 <h1 align="center">solana full-stack dev 🫡</h1>
 
-<div align="center" tyle="display: flex; width: 100vw; text-align: center;">
+<div align="center" style="display: flex; width: 100vw; text-align: center;">
     <img src="https://img.shields.io/badge/rust-black?logo=rust" alt="rust" />
     <img src="https://img.shields.io/badge/typescript-black?logo=typescript" alt="typescript"/>
     <img src="https://img.shields.io/badge/javascript-black?logo=javascript" alt="javascript"/>
