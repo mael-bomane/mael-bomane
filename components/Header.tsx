@@ -8,6 +8,8 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import { ButtonLetsChat } from "./ButtonLetsChat";
+import { IoLogoDiscord, IoLogoGithub } from "react-icons/io5";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const links: {
   href: string;
@@ -101,7 +103,26 @@ const Header = () => {
         </div>*/}
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        <div className="hidden lg:flex lg:justify-end lg:flex-1">
+          <div className="flex justify-center items-center space-x-4 mr-4">
+            <Link
+              href="https://x.com/mael_bomane"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <RiTwitterXLine className="h-8 w-8" />
+            </Link>
+            <Link
+              href="https://github.com/mael-bomane"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoLogoGithub className="h-8 w-8" />
+            </Link>
+          </div>
+
+          {cta}
+        </div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -126,7 +147,6 @@ const Header = () => {
                 height={32}
               />
               <span className="font-extrabold text-lg">{config.appName}</span>
-              {config.appDescription}
             </Link>
             <button
               type="button"
@@ -154,7 +174,7 @@ const Header = () => {
           {/* Your links on small screens */}
           <div className="flow-root mt-6">
             <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-start">
+              {/*<div className="flex flex-col gap-y-4 items-start">
                 {links.map((link) => (
                   <Link
                     href={link.href}
@@ -165,11 +185,30 @@ const Header = () => {
                     {link.label}
                   </Link>
                 ))}
-              </div>
+              </div>*/}
+            </div>
+            <div className="flex justify-center items-center space-x-4 mr-4">
+              <Link
+                href="https://x.com/mael_bomane"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTwitterXLine className="h-8 w-8" />
+              </Link>
+              <Link
+                href="https://github.com/mael-bomane"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoLogoGithub className="h-8 w-8" />
+              </Link>
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
+            <div className="flex flex-col">
+
+              {cta}
+            </div>
           </div>
         </div>
       </div>

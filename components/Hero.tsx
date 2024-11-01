@@ -2,8 +2,8 @@ import config from "@/config";
 
 const Hero = () => {
   return (
-    <section className="w-full md:max-w-7xl mx-auto flex grow flex-col lg:flex-row items-center justify-center md:px-8 py-8 lg:py-20">
-      <div className="relative static flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
+    <section className="w-full md:max-w-7xl mx-auto flex grow flex-col lg:flex-row justify-center md:px-8 py-8 lg:py-20">
+      <div className="flex flex-col gap-10 lg:gap-14 text-center lg:text-left lg:items-start">
         {/*<a
           href="https://www.producthunt.com/posts/shipfast-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-shipfast&#0045;2"
           target="_blank"

@@ -2,7 +2,6 @@
 import { Suspense } from 'react'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -11,10 +10,9 @@ export default function Home() {
       <Suspense>
         <Header />
       </Suspense>
-      <main className="flex md:flex-row flex-col justify-center items-center grow">
+      <main className="flex flex-col justify-center grow">
         <Hero />
       </main>
-      <Footer />
     </div>
   );
 }

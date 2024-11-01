@@ -30,9 +30,9 @@ const Footer = () => {
 							</strong>
 						</Link>
 
-						<p className="mt-3 text-sm text-base-content/80">
+						{/*<p className="mt-3 text-sm text-base-content/80">
 							{config.appDescription}
-						</p>
+						</p>*/}
 						<p className="mt-3 text-sm text-base-content/60">
 							copyright © {new Date().getFullYear()}
 						</p>
