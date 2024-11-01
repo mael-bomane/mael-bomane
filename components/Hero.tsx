@@ -1,14 +1,9 @@
-import Image from "next/image";
-import TestimonialsAvatars from "./TestimonialsAvatars";
 import config from "@/config";
-import { Socials } from "./Socials";
-import ImageGrid from "./ImageStack";
-import { Badges } from "./Badges";
 
 const Hero = () => {
   return (
-    <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
-      <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
+    <section className="w-full md:max-w-7xl mx-auto flex grow flex-col lg:flex-row items-center justify-center md:px-8 py-8 lg:py-20">
+      <div className="relative static flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         {/*<a
           href="https://www.producthunt.com/posts/shipfast-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-shipfast&#0045;2"
           target="_blank"
@@ -24,22 +19,22 @@ const Hero = () => {
           </svg>
         </a>*/}
 
-        <h1 className="bg-base-100 p-4 pb-8 font-extrabold text-4xl lg:text-6xl underline rounded-md tracking-tight md:-mb-4">
-          from idea, to production.
+        <h1 className="w-full text-base-100 pb-8 font-extrabold text-3xl lg:text-6xl rounded-md tracking-tight">
+          {config.appDescription}
+          {/*from idea, to production.*/}
         </h1>
-        <div className="lowercase bg-base-100 p-4 rounded-md text-lg opacity-80 leading-relaxed">
-          <Badges />
+        {/*<div className="lowercase bg-base-100 p-4 rounded-md text-lg opacity-80 leading-relaxed">
           <p>
             i build your SaaS, AI tool, Discord/Telegram Bot or any other App to suit your needs.
           </p>
         </div>
         <button className="btn btn-primary btn-wide">
-          start now
-        </button>
+          let&apos;s chat !
+        </button>*/}
 
-        <TestimonialsAvatars priority={true} />
+        {/*<TestimonialsAvatars priority={true} />*/}
       </div>
-    </section >
+    </section>
   );
 };
 

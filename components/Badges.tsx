@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const Badges: FC = () => {
   return (
-    <div className="flex justify-center items-center max-w-96">
+    <div className="flex justify-center items-center space-x-1 flex-wrap space-y-1">
       <img src="https://img.shields.io/badge/rust-black?logo=rust" alt="rust" />
       <img src="https://img.shields.io/badge/typescript-black?logo=typescript" alt="typescript" />
       <img src="https://img.shields.io/badge/javascript-black?logo=javascript" alt="javascript" />

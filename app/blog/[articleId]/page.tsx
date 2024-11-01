@@ -88,8 +88,8 @@ export default async function Article({
       <div>
         <Link
           href="/blog"
-          className="link !no-underline text-base-content/80 hover:text-base-content inline-flex items-center gap-1"
-          title="Back to Blog"
+          className="link !no-underline text-base-100 hover:text-base-content inline-flex items-center gap-1"
+          title="back to Blog"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ export default async function Article({
               clipRule="evenodd"
             />
           </svg>
-          Back to Blog
+          back to blog
         </Link>
       </div>
 
@@ -118,7 +118,7 @@ export default async function Article({
                 extraStyle="!badge-lg"
               />
             ))}
-            <span className="text-base-content/80" itemProp="datePublished">
+            <span className="text-base-100" itemProp="datePublished">
               {new Date(article.publishedAt).toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
@@ -127,11 +127,11 @@ export default async function Article({
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
+          <h1 className="text-4xl text-base-100 md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 md:mb-8">
             {article.title}
           </h1>
 
-          <p className="text-base-content/80 md:text-lg max-w-[700px]">
+          <p className="text-base-100 md:text-lg max-w-[700px]">
             {article.description}
           </p>
         </section>
@@ -139,8 +139,8 @@ export default async function Article({
         <div className="flex flex-col md:flex-row">
           {/* SIDEBAR WITH AUTHORS AND 3 RELATED ARTICLES */}
           <section className="max-md:pb-4 md:pl-12 max-md:border-b md:border-l md:order-last md:w-72 shrink-0 border-base-content/10">
-            <p className="text-base-content/80 text-sm mb-2 md:mb-3">
-              Posted by
+            <p className="text-base-100 text-base-content/80 text-sm mb-2 md:mb-3">
+              posted by
             </p>
             <Avatar article={article} />
 

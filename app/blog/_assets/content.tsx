@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import Image, { StaticImageData } from "next/image";
 import marcImg from "@/app/blog/_assets/images/authors/marc.png";
+import maelImg from "@/app/icon.png";
 import introducingSupabaseImg from "@/public/blog/introducing-supabase/header.png";
 
 // ==================================================================================================================================================================
@@ -17,19 +18,19 @@ export type categoryType = {
 
 // These slugs are used to generate pages in the /blog/category/[categoryI].js. It's a way to group articles by category.
 const categorySlugs: { [key: string]: string } = {
-  feature: "feature",
-  tutorial: "tutorial",
+  blockchain: "blockchain",
+  cybersec: "cybersec",
 };
 
 // All the blog categories data display in the /blog/category/[categoryI].js pages.
 export const categories: categoryType[] = [
   {
     // The slug to use in the URL, from the categorySlugs object above.
-    slug: categorySlugs.feature,
+    slug: categorySlugs.blockchain,
     // The title to display the category title (h1), the category badge, the category filter, and more. Less than 60 characters.
-    title: "New Features",
+    title: "blockchain",
     // A short version of the title above, display in small components like badges. 1 or 2 words
-    titleShort: "Features",
+    titleShort: "blockchain",
     // The description of the category to display in the category page. Up to 160 characters.
     description:
       "Here are the latest features we've added to ShipFast. I'm constantly improving our product to help you ship faster.",
@@ -37,13 +38,13 @@ export const categories: categoryType[] = [
     descriptionShort: "Latest features added to ShipFast.",
   },
   {
-    slug: categorySlugs.tutorial,
-    title: "How Tos & Tutorials",
-    titleShort: "Tutorials",
+    slug: categorySlugs.cybersec,
+    title: "cybersec",
+    titleShort: "cybersec",
     description:
-      "Learn how to use ShipFast with these step-by-step tutorials. I'll show you how to ship faster and save time.",
+      "stay ahead of bad guys, content for educational purposes only.",
     descriptionShort:
-      "Learn how to use ShipFast with these step-by-step tutorials.",
+      "stay ahead of bad guys, content for educational purposes only.",
   },
 ];
 
@@ -81,7 +82,7 @@ const socialIcons: {
         y="0px"
         viewBox="0 0 1668.56 1221.19"
         className="w-9 h-9"
-        // Using a dark theme? ->  className="w-9 h-9 fill-white"
+      // Using a dark theme? ->  className="w-9 h-9 fill-white"
       >
         <g id="layer1" transform="translate(52.390088,-25.058597)">
           <path
@@ -125,6 +126,7 @@ const authorSlugs: {
   [key: string]: string;
 } = {
   marc: "marc",
+  mael: "mael",
 };
 
 // All the blog authors data display in the /blog/author/[authorId].js pages.
@@ -160,6 +162,38 @@ export const authors: authorType[] = [
       },
     ],
   },
+  {
+    // The slug to use in the URL, from the authorSlugs object above.
+    slug: authorSlugs.mael,
+    // The name to display in the author's bio. Up to 60 characters.
+    name: "mael bomane",
+    // The job to display in the author's bio. Up to 60 characters.
+    job: "solana full-stack dev 🫡",
+    // The description of the author to display in the author's bio. Up to 160 characters.
+    description:
+      "Marc is a developer and an entrepreneur. He's built 20 startups in the last 3 years. 6 were profitable and 3 were acquired. He's currently building ByeDispute, the #1 Stripe Chargebacks Protection tool.",
+    // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
+    avatar: maelImg,
+    // A list of social links to display in the author's bio.
+    socials: [
+      {
+        name: socialIcons.twitter.name,
+        icon: socialIcons.twitter.svg,
+        url: "https://twitter.com/mael_bomane",
+      },
+      {
+        name: socialIcons.linkedin.name,
+        icon: socialIcons.linkedin.svg,
+        url: "https://www.linkedin.com/in/marclouvion/",
+      },
+      {
+        name: socialIcons.github.name,
+        icon: socialIcons.github.svg,
+        url: "https://github.com/Marc-Lou-Org/ship-fast",
+      },
+    ],
+  },
+
 ];
 
 // ==================================================================================================================================================================
@@ -208,7 +242,7 @@ export const articles: articleType[] = [
       "Supabase is an open-source Firebase alternative. It's a great tool for building a backend for your app. It's now integrated with ShipFast!",
     // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
     categories: [
-      categories.find((category) => category.slug === categorySlugs.feature),
+      categories.find((category) => category.slug === categorySlugs.blockchain),
     ],
     // The author of the article. It's used to generate a link to the author's bio page.
     author: authors.find((author) => author.slug === authorSlugs.marc),

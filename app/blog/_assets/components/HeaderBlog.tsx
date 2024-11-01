@@ -9,20 +9,20 @@ import Image from "next/image";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import { categories } from "../content";
-import ButtonSignin from "@/components/ButtonSignin";
+import { ButtonLetsChat } from "@/components/ButtonLetsChat";
 
 const links: {
   href: string;
   label: string;
 }[] = [
-  {
-    href: "/blog/",
-    label: "All Posts",
-  },
-];
+    {
+      href: "/blog/",
+      label: "all posts",
+    },
+  ];
 
 const cta: JSX.Element = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
+  <ButtonLetsChat extraStyle="btn-primary" />
 );
 
 const ButtonPopoverCategories = () => {
@@ -34,14 +34,13 @@ const ButtonPopoverCategories = () => {
             className="link no-underline flex flex-nowrap items-center gap-1 text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
             title="Open Blog categories"
           >
-            Categories
+            categories
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className={`w-5 h-5 duration-200 ${
-                open ? "transform rotate-180 " : ""
-              }`}
+              className={`w-5 h-5 duration-200 ${open ? "transform rotate-180 " : ""
+                }`}
             >
               <path
                 fillRule="evenodd"
@@ -105,14 +104,13 @@ const ButtonAccordionCategories = () => {
         type="button"
         className="link no-underline flex justify-between items-center w-full "
       >
-        Categories
+        categories
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={`w-5 h-5 duration-200 ${
-            isOpen ? "transform rotate-180 " : ""
-          }`}
+          className={`w-5 h-5 duration-200 ${isOpen ? "transform rotate-180 " : ""
+            }`}
         >
           <path
             fillRule="evenodd"
@@ -165,7 +163,7 @@ const HeaderBlog = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
+              className="w-8 rounded-full"
               priority={true}
               width={32}
               height={32}

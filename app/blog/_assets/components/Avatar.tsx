@@ -21,7 +21,7 @@ const Avatar = ({ article }: { article: articleType }) => {
           height={28}
         />
       </span>
-      <span className="group-hover:underline">{article.author.name}</span>
+      <span className="group-hover:underline text-base-100">{article.author.name}</span>
     </Link>
   );
 };

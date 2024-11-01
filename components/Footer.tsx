@@ -34,12 +34,11 @@ const Footer = () => {
 							{config.appDescription}
 						</p>
 						<p className="mt-3 text-sm text-base-content/60">
-							Copyright © {new Date().getFullYear()} - All rights
-							reserved
+							copyright © {new Date().getFullYear()}
 						</p>
 					</div>
 					<div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
-						<div className="lg:w-1/3 md:w-1/2 w-full px-4">
+						{/*<div className="lg:w-1/3 md:w-1/2 w-full px-4">
 							<div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
 								LINKS
 							</div>
@@ -55,26 +54,47 @@ const Footer = () => {
 										support
 									</a>
 								)}
-								{/*<Link
+								<Link
 									href="/#pricing"
 									className="link link-hover"
 								>
 									pricing
-								</Link>*/}
-								<Link href="/blog" className="link link-hover">
-									Blog
 								</Link>
-								{/*<a
+								<Link href="/blog" className="link link-hover">
+									blog
+								</Link>
+								<Link href="/projects" className="link link-hover">
+									projects
+								</Link>
+								<a
 									href="/#"
 									target="_blank"
 									className="link link-hover"
 								>
 									Affiliates
-								</a>*/}
+								</a>
 							</div>
-						</div>
+						</div>*/}
 
-						<div className="lg:w-1/3 md:w-1/2 w-full px-4">
+						{/*<div className="lg:w-1/3 md:w-1/2 w-full px-4">
+							<div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
+								SOCIALS
+							</div>
+
+							<div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
+								<Link href="/tos" className="link link-hover">
+									Terms of services
+								</Link>
+								<Link
+									href="/privacy-policy"
+									className="link link-hover"
+								>
+									Privacy policy
+								</Link>
+							</div>
+						</div>*/}
+
+						{/*<div className="lg:w-1/3 md:w-1/2 w-full px-4">
 							<div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
 								LEGAL
 							</div>
@@ -90,7 +110,8 @@ const Footer = () => {
 									Privacy policy
 								</Link>
 							</div>
-						</div>
+						</div>*/}
+
 					</div>
 				</div>
 			</div>
