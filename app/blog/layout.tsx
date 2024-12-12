@@ -6,7 +6,9 @@ import Header from "@/components/Header";
 export default async function LayoutBlog({ children }: { children: any }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Suspense>
+        <Header />
+      </Suspense>
       <main className="flex flex-col justify-center items-center grow">
         {children}
       </main>
