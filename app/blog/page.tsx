@@ -4,6 +4,7 @@ import CardCategory from "./_assets/components/CardCategory";
 import config from "@/config";
 import { getSEOTags } from "@/libs/seo";
 
+// @ts-ignore
 export const metadata = getSEOTags({
   title: `${config.appName} blog`,
   description:
@@ -19,17 +20,15 @@ export default async function Blog() {
     )
     .slice(0, 6);
   return (
-    <>
-      <section className="text-center text-base-100 max-w-xl mx-auto mt-12 mb-24 md:mb-32">
-        <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6">
-          welcome to my blog 👋
-        </h1>
-        <p className="text-lg opacity-80 leading-relaxed">
-          i write about blockchain & cybersecurity
-        </p>
-      </section>
+    <section className="w-full text-center text-secondary bg-primary max-w-7xl mx-auto mt-12 mb-24 md:mb-32">
+      <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6">
+        welcome to my blog 👋
+      </h1>
+      <p className="text-lg opacity-80 leading-relaxed">
+        i write about blockchain & cybersecurity
+      </p>
 
-      <section className="grid lg:grid-cols-2 mb-24 md:mb-32 gap-8">
+      <div className="grid lg:grid-cols-2 mb-24 md:mb-32 gap-8">
         {articlesToDisplay.map((article, i) => (
           <CardArticle
             article={article}
@@ -37,9 +36,9 @@ export default async function Blog() {
             isImagePriority={i <= 2}
           />
         ))}
-      </section>
+      </div>
 
-      <section>
+      <div>
         <p className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
           Browse articles by category
         </p>
@@ -49,7 +48,7 @@ export default async function Blog() {
             <CardCategory key={category.slug} category={category} tag="div" />
           ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

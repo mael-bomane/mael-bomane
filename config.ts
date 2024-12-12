@@ -5,7 +5,7 @@ const config = {
   // REQUIRED
   appName: "mael bomane",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
-  appDescription: "solana full-stack dev 🫡",
+  appDescription: "solana full-stack dev",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "mael-bomane.vercel.app",
   crisp: {
