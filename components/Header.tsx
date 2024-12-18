@@ -11,6 +11,7 @@ import { ButtonLetsChat } from "./ButtonLetsChat";
 import { IoLogoDiscord, IoLogoGithub } from "react-icons/io5";
 import { RiTwitterXLine } from "react-icons/ri";
 import { Button } from "./ui/button";
+import { RiTelegram2Fill } from "react-icons/ri";
 
 const links: {
   href: string;
@@ -107,11 +108,19 @@ const Header = () => {
         <div className="hidden lg:flex lg:justify-end lg:flex-1">
           <div className="flex justify-center items-center space-x-4 mr-4">
             <Link
+              href="https://t.me/mbomane"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <RiTelegram2Fill className="h-7 w-7" />
+            </Link>
+
+            <Link
               href="https://x.com/mael_bomane"
               target="_blank"
               rel="noreferrer"
             >
-              <RiTwitterXLine className="h-8 w-8" />
+              <RiTwitterXLine className="h-7 w-7" />
             </Link>
             <Link
               href="https://github.com/mael-bomane"
@@ -189,6 +198,13 @@ const Header = () => {
               </div>*/}
             </div>
             <div className="flex justify-center items-center space-x-4 mr-4">
+              <Link
+                href="https://t.me/mbomane"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTelegram2Fill className="h-8 w-8" />
+              </Link>
               <Link
                 href="https://x.com/mael_bomane"
                 target="_blank"
