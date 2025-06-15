@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/html5-black?logo=html5" alt="html5"/>
     <img src="https://img.shields.io/badge/css3-black?logo=css3" alt="css3"/>
     <img src="https://img.shields.io/badge/react-black?logo=react" alt="react"/>
+    <img src="https://img.shields.io/badge/postgresql-black?logo=mysql" alt="mysql"/>
     <img src="https://img.shields.io/badge/postgresql-black?logo=postgresql" alt="postgresql"/>
     <img src="https://img.shields.io/badge/mongodb-black?logo=mongodb" alt="mongodb"/>
     <img src="https://img.shields.io/badge/firebase-black?logo=firebase" alt="firebase"/>
