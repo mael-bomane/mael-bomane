@@ -1,4 +1,4 @@
-<h1 align="center">full-stack developer 🧠</h1>
+<h1 align="center">full-stack developer</h1>
 
 <div align="center" style="display: flex; width: 100vw; text-align: center;">
     <img src="https://img.shields.io/badge/rust-black?logo=rust" alt="rust" />
