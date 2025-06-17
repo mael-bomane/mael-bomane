@@ -8,6 +8,7 @@
     <img src="https://img.shields.io/badge/html5-black?logo=html5" alt="html5"/>
     <img src="https://img.shields.io/badge/css3-black?logo=css3" alt="css3"/>
     <img src="https://img.shields.io/badge/react-black?logo=react" alt="react"/>
+    <img src="https://img.shields.io/badge/nextjs-black?logo=nextjs" alt="nextjs"/>
     <img src="https://img.shields.io/badge/nestjs-black?logo=nestjs" alt="nestjs"/>
     <img src="https://img.shields.io/badge/express-black?logo=express" alt="express"/>
     <img src="https://img.shields.io/badge/mysql-black?logo=mysql" alt="mysql"/>
