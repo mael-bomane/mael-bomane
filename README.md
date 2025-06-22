@@ -24,6 +24,5 @@
     <img src="https://img.shields.io/badge/mocha-black?logo=mocha" alt="mocha"/>
     <img src="https://img.shields.io/badge/selenium-black?logo=selenium" alt="selenium"/>
     <img src="https://img.shields.io/badge/unity-black?logo=unity" alt="unity"/>
-  </div>
 </div>
 
