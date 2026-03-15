@@ -1,16 +1,15 @@
-## Hi there 👋
+<h1 align="center">Hi, I'm Maël 👋</h1>
 
-<!--
-**0x-mael/0x-mael** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">I solve complex problems from my terminal.</p>
 
-Here are some ideas to get you started:
+<div align="center" style="display: flex; width: 100vw; text-align: center;">
+    <img src="https://img.shields.io/badge/rust-black?logo=rust" alt="rust" />
+    <img src="https://img.shields.io/badge/python-black?logo=python" alt="python"/>
+    <img src="https://img.shields.io/badge/typescript-black?logo=typescript" alt="typescript"/>
+    <img src="https://img.shields.io/badge/react-black?logo=react" alt="react"/>
+    <img src="https://img.shields.io/badge/nestjs-black?logo=nestjs" alt="nestjs"/>
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center">
+
+</div>
